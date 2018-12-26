@@ -1,5 +1,6 @@
 const gulp             = require('gulp'),
-			watch            = require('gulp-watch'),
+      watch            = require('gulp-watch'),
+      wait             = require('gulp-wait')
 			browserSync      = require("browser-sync"),
 			rimraf           = require('rimraf'),
       sourcemaps       = require('gulp-sourcemaps'),
@@ -57,7 +58,6 @@ gulp.task('html:dist', function (done) {
 gulp.task('js:dist', function (done) {
   gulp.src(path.src.js)
     .pipe(rigger())
-    .pipe(sourcemaps.init())
     .pipe(uglify().on('error', function(uglify) {
         console.error(uglify.message);
         this.emit('end');
@@ -70,7 +70,7 @@ gulp.task('js:dist', function (done) {
 
 gulp.task('style:dist', function (done) {
   gulp.src(path.src.style)
-    .pipe(sourcemaps.init())
+    .pipe(wait(500))
     .pipe(sass().on('error', sass.logError))
   	.pipe(autoprefixer('last 2 versions'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
