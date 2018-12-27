@@ -1,13 +1,29 @@
 body 
   font-family: 'Brandon Grotesque', sans-serif
-  font-size: 18px
+  font-size: 22px
   color: #777777
 .container
   width: 60%
   margin: 0 auto
+input.error, textarea.error
+	border: 2px solid #ED4337 !important
+label.error
+	display: block
+	text-align: left
+	color: #ffffff
+	font-size: 1.16em
+	font-weight: 700
+	padding-left: 7px
+	padding-bottom: 12px
 .section-title
   color: #222222
   font-size: 3.3em
   font-weight: 300
   &_bold
     font-weight: 700
+@media screen and (max-width: 1760px)
+  body
+    font-size: 20px
+@media screen and (max-width: 1440px)
+  body
+    font-size: 18px

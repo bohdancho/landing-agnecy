@@ -16,13 +16,13 @@
     justify-content: space-between
     &__item
       width: 29%
-      display: flex
       flex-direction: column
       align-items: center
       justify-content: flex-end
       &__img
         margin-bottom: 18px
         width: 100%
+        height: auto
         display: block
         border-radius: 50%
         border: 7px solid #ffffff
@@ -39,6 +39,7 @@
         font-weight: 400
         text-align: center
       &__icons
+        margin: 0 auto
         display: flex
         justify-content: space-between
         &-3
@@ -49,32 +50,34 @@
           border: 3px solid #ffffff
           border-radius: 50%
           background: #111111 center center no-repeat
+          background-size: 50%
           width: 41px
           height: 41px
           text-decoration: none
           transition: all 0.2s ease
           &-tw
-            background-image: url(../img/interface/Twitter.png)
+            background-image: url(../img/interface/twitter.svg)
             &:hover
               border-color: #00aced
               background-color: #00aced
           &-fb
-            background-image: url(../img/interface/Facebook.png)
+            background-image: url(../img/interface/facebook.svg)
+            background-size: 53%
             &:hover
               border-color: #3b5998
               background-color: #3b5998
           &-pt
-            background-image: url(../img/interface/Pinterest.png)
+            background-image: url(../img/interface/Pinterest.svg)
             &:hover
               border-color: #cb2028
               background-color: #cb2028
           &-gp
-            background-image: url(../img/interface/GooglePlus.png)
+            background-image: url(../img/interface/GooglePlus.svg)
             &:hover
               border-color: #d95232
               background-color: #d95232
   &-subtext
     text-align: center
     color: #ebebeb
-    font-size: 20px
+    font-size: 1.11em
     font-weight: 400

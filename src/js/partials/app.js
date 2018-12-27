@@ -1,3 +1,2 @@
-if (1) {
-	console.log('HE')
-}
+//= scroll.js
+//= validate.js

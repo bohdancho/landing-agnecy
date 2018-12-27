@@ -1,0 +1,92 @@
+.contact
+  padding-top: 100px
+  padding-bottom: 100px
+  background-color: #7690c5
+  &-container
+    display: flex
+    justify-content: space-between
+  &-title
+    margin-bottom: 17px
+    color: #ffffff
+  &-text
+    margin-bottom: 47px
+    color: #ffffff
+    font-weight: 400
+  &-main
+    width: 50%
+    max-width: 419px
+    &__address
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &__item
+        margin-bottom: 40px
+        padding-left: 40px
+        line-height: 31px
+        color: #ffffff
+        font-weight: 400
+        width: 40%
+        background: 0 center no-repeat
+        background-size: 27px
+        white-space: nowrap
+        &-1
+          background-image: url(../img/interface/mobile.svg)
+        &-2
+          background-image: url(../img/interface/mail.svg)
+        &-3
+          background-image: url(../img/interface/twitter.svg)
+        &-4
+          background-image: url(../img/interface/facebook.svg)
+        &-5
+          background-image: url(../img/interface/googleplus.svg)
+        &-6
+          background-image: url(../img/interface/pinterest.svg)
+  &-form
+    margin-left: 25px
+    width: 40%
+    &__input
+      border: 1px solid #cccccc
+      background-color: #ffffff
+      padding: 18px 20px
+      border-radius: 3px
+      width: 100%
+      font-size: 1em
+      margin-bottom: 20px
+      color: #2a2542
+      font-family: 'Brandon Grotesque', sans-serif
+      &::placeholder
+        color: #bbbbbb
+        font-weight: 500                 
+        opacity: 1
+        transition: opacity 0.3s ease
+      &:focus::-webkit-input-placeholder 
+        opacity: 0
+      &:focus::-moz-placeholder          
+        opacity: 0
+      &:focus:-moz-placeholder          
+        opacity: 0
+      &:focus:-ms-input-placeholder     
+        opacity: 0
+    &__msg
+      resize: none
+      height: 150px
+    &__submit
+      font-family: 'Brandon Grotesque', sans-serif
+      position: relative
+      width: 170px
+      height: 60px
+      padding: 0
+      font-size: 1em
+      color: #454545
+      text-align: center
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
+      background: #ecf0f1
+      border: 0
+      cursor: pointer;
+      box-shadow: inset 0 -4px darken(#ecf0f1, 15%)
+      transition: all 0.2s ease
+      &:hover
+        background-color: darken(#ecf0f1, 5%)
+      &:active 
+        top: 1px
+        box-shadow: none
