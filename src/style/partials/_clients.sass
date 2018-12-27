@@ -1,0 +1,69 @@
+.clients
+  padding-top: 100px
+  padding-bottom: 100px
+  background-color: #fafafa
+  &-container
+    width: 65%
+  &-title
+    margin-bottom: 18px
+    text-align: center
+  &-text
+    margin-bottom: 46px
+    text-align: center
+  &__item
+    display: flex
+    align-items: center
+    &-1
+      margin-bottom: 39px
+    &-2
+      justify-content: flex-end
+    &__img
+      border-radius: 50%
+      display: block
+      width: 25%
+    &__msg
+      padding: 10px 60px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      min-height: 174px
+      border: 1px solid #e8e8e8
+      background-color: #ffffff
+      width: 66%
+      position: relative
+      &:before, &:after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        border-top: 11px solid transparent
+        border-bottom: 11px solid transparent
+      &_right
+        margin-left: 40px
+        &:before
+          border-right: 20px solid #e8e8e8
+          left: 0
+          margin-left: -20px
+        &:after
+          border-right: 20px solid #ffffff
+          left: 0
+          margin-left: -18px
+      &_left
+        margin-right: 40px
+        &:before
+          border-left: 20px solid #e8e8e8
+          right: 0
+          margin-right: -20px
+        &:after
+          border-left: 20px solid #ffffff
+          right: 0
+          margin-right: -18px
+      &__text
+        margin-bottom: 13px
+        font-size: 1.44em
+        font-weight: 400
+        line-height: 1.07em
+      &__author
+        color: #7690c5
+        font-size: 1.11em
+        font-weight: 400

@@ -1,0 +1,80 @@
+.team
+  padding-top: 100px
+  padding-bottom: 100px
+  background-color: #111111
+  &-title
+    margin-bottom: 8px
+    text-align: center
+    color: #ffffff
+  &-text
+    margin-bottom: 72px
+    text-align: center
+    color: #ffffff
+  &-list
+    margin-bottom: 50px
+    display: flex
+    justify-content: space-between
+    &__item
+      width: 29%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-end
+      &__img
+        margin-bottom: 18px
+        width: 100%
+        display: block
+        border-radius: 50%
+        border: 7px solid #ffffff
+      &__name
+        margin-bottom: 5px
+        color: #ffffff
+        font-size: 1em
+        font-weight: 700
+        text-align: center
+      &__descr
+        margin-bottom: 11px
+        color: #ebebeb
+        font-size: 0.88em
+        font-weight: 400
+        text-align: center
+      &__icons
+        display: flex
+        justify-content: space-between
+        &-3
+          width: 140px
+        &-2
+          width: 90px
+        &__item
+          border: 3px solid #ffffff
+          border-radius: 50%
+          background: #111111 center center no-repeat
+          width: 41px
+          height: 41px
+          text-decoration: none
+          transition: all 0.2s ease
+          &-tw
+            background-image: url(../img/interface/Twitter.png)
+            &:hover
+              border-color: #00aced
+              background-color: #00aced
+          &-fb
+            background-image: url(../img/interface/Facebook.png)
+            &:hover
+              border-color: #3b5998
+              background-color: #3b5998
+          &-pt
+            background-image: url(../img/interface/Pinterest.png)
+            &:hover
+              border-color: #cb2028
+              background-color: #cb2028
+          &-gp
+            background-image: url(../img/interface/GooglePlus.png)
+            &:hover
+              border-color: #d95232
+              background-color: #d95232
+  &-subtext
+    text-align: center
+    color: #ebebeb
+    font-size: 20px
+    font-weight: 400
