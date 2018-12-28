@@ -74,7 +74,6 @@ gulp.task('style:dist', function (done) {
     .pipe(sass().on('error', sass.logError))
   	.pipe(autoprefixer('last 2 versions'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.dist.css))
     .pipe(reload({stream: true}));
   done();
