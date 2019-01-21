@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('#contact-form').validate({
     rules: {
       name: {
-        required: true,
+        required: true
       },
       mail: {
         required: true,

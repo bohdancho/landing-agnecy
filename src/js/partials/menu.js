@@ -28,9 +28,8 @@ function nav() {
   if ($('#header-nav').attr('class') === 'header-nav') {
     $('#header-nav').toggleClass('header-nav_active');
     $('#header-nav').hide();
-    $('#header-nav').fadeIn(500);
+    $('#header-nav').fadeIn(600);
   } else {
-    $('header-nav').fadeOut(500);
     $('#header-nav').toggleClass('header-nav_active');
   };
 };
